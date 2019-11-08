@@ -1,4 +1,7 @@
+# CS56, F19, lab07
+Helen Huang
 Link to Javadoc and Jacoco Report: https://ucsb-cs56-f19.github.io/lab07-ziyihuang/
+
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
