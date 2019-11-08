@@ -3,6 +3,8 @@ Helen Huang
 
 Link to Javadoc and Jacoco Report: https://ucsb-cs56-f19.github.io/lab07-ziyihuang/
 
+Link to Heroku App: https://cs56-f19-lab07-ziyihuang.herokuapp.com/
+
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
