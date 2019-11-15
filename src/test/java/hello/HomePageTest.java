@@ -54,8 +54,9 @@ public class HomePageTest {
                 .andExpect(xpath("/html/body/div/nav/a").string("lab07"));
     }
     
-    //html/body/div[1]/nav/div/ul[1]/li[2]/a
-    //Test for Page 1 to Earthquake
+    
+    //xPath for Page1: html/body/div[1]/nav/div/ul[1]/li[2]/a
+    //Test for changing Page1 to Earthquake
     @Test
     public void getHomePage_hasCorrectPage1Title() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
