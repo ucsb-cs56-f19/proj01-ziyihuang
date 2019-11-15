@@ -148,6 +148,13 @@
                 <version>2.22.0</version>
                 <scope>test</scope>
          </dependency>
+        
+        <!-- New to make Earthquake tests work-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
     <!-- (24) <repositories/> -->
