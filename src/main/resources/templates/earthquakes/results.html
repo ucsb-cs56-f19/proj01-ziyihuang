@@ -25,7 +25,7 @@
 
       <pre th:text="${json}">This is placeholder</pre>
       
-      <h2> Results</h2>
+      <h2>Results</h2>
 
       <table>
           <thead>
@@ -33,6 +33,7 @@
                   <th>Type</th>
                   <th>Url</th>
                   <th>Count</th>
+                  <th>Title</th>
               </tr>
           </thead>
           <tbody>
@@ -40,6 +41,7 @@
                   <td th:text="${featureCollection.type}"></td>
                   <td th:text="${featureCollection.metadata.url}"></td>
                   <td th:text="${featureCollection.metadata.count}"></td>
+                  <td th:test="${featureCollection.metadata.title}"></td>
 
               </tr>
           </tbody>
