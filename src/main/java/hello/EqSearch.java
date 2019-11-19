@@ -6,6 +6,7 @@ public class EqSearch {
     private int minmag;
     
     //no-arg default constructor
+    public EqSearch() {}
 
     //Getters
     public int getDistance(){
