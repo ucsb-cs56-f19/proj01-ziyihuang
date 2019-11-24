@@ -5,6 +5,10 @@ Link to Javadoc and Jacoco Report: https://ucsb-cs56-f19.github.io/lab07-ziyihua
 
 Link to Heroku App: https://cs56-f19-lab07-ziyihuang.herokuapp.com/
 
+Link to Travis-CI: https://travis-ci.org/ucsb-cs56-f19/lab07-ziyihuang/
+
+---------------------
+
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
