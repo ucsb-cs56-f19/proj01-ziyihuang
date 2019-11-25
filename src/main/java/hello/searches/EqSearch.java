@@ -1,5 +1,5 @@
 //Plain Java Bean
-package hello;
+package hello.searches;
 
 public class EqSearch {
     private int distance;
