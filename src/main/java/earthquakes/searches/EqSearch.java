@@ -1,5 +1,5 @@
 //Plain Java Bean
-package hello.searches;
+package earthquakes.searches;
 
 public class EqSearch {
     private int distance;
