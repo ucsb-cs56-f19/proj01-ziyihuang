@@ -1,11 +1,11 @@
-# CS56, F19, lab07
+# CS56, F19, proj01
 Helen Huang
 
-Link to Javadoc and Jacoco Report: https://ucsb-cs56-f19.github.io/lab07-ziyihuang/
+Link to Javadoc and Jacoco Report: https://ucsb-cs56-f19.github.io/proj01-ziyihuang/
 
-Link to Heroku App: https://cs56-f19-lab07-ziyihuang.herokuapp.com/
+Link to Heroku App: https://cs56-f19-proj01-ziyihuang.herokuapp.com/
 
-Link to Travis-CI: https://travis-ci.org/ucsb-cs56-f19/lab07-ziyihuang/
+Link to Travis-CI: https://travis-ci.org/ucsb-cs56-f19/proj01-ziyihuang/
 
 ---------------------
 
