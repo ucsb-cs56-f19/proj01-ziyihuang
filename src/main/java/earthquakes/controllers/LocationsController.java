@@ -13,10 +13,12 @@ import java.util.HashMap;
 
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
 
-import earthquakes.geojson.FeatureCollection;
+import earthquakes.osm.Place;
 
 import earthquakes.services.LocationQueryService;
 import earthquakes.searches.LocSearch;
+
+import java.util.List;
 
 @Controller
 public class LocationsController {
@@ -41,10 +43,8 @@ public class LocationsController {
         String json = e.getJSON(locSearch.getLocation());
         model.addAttribute("json", json);
         
-        /*
-        FeatureCollection featureCollection = FeatureCollection.fromJSON(json);
-        model.addAttribute("featureCollection",featureCollection);
-         **/
+        List<Place> place = Place.listfromJSON(json);
+        model.addAttribute("place", place);
         
         return "locations/results";
     }
