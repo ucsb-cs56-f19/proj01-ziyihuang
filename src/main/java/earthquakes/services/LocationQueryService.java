@@ -31,7 +31,7 @@ public class LocationQueryService {
 
         HttpEntity<String> entity = new HttpEntity<>("body", headers);
 
-        String uri = "https://nominatim.org/release-docs/develop/api/Search/";
+        String uri = "https://nominatim.openstreetmap.org/search/";
         String params = String.format("%s?format=json", location);
 
         String url = uri + params;
