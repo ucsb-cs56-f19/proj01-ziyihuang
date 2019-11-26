@@ -69,11 +69,20 @@ public class HomePageTest {
     //xPath for Page1: html/body/div[1]/nav/div/ul[1]/li[2]/a
     //Test for changing Page1 to Earthquake
     @Test
-    public void getHomePage_hasCorrectPage1Title() throws Exception {
+    public void getHomePage_hasCorrectEqSearchTitle() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
+                .andExpect(status().isOk())
+                .andExpect(xpath("html/body/div[1]/nav/div/ul[1]/li[1]/a").exists())
+                .andExpect(xpath("html/body/div[1]/nav/div/ul[1]/li[1]/a").string("Earthquake Search"));
+    }
+    
+    
+    @Test
+    public void getHomePage_hasCorrectLocSearchTitle() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
                 .andExpect(xpath("html/body/div[1]/nav/div/ul[1]/li[2]/a").exists())
-                .andExpect(xpath("html/body/div[1]/nav/div/ul[1]/li[2]/a").string("Earthquake Search"));
+                .andExpect(xpath("html/body/div[1]/nav/div/ul[1]/li[2]/a").string("Locations"));
     }
     
     
