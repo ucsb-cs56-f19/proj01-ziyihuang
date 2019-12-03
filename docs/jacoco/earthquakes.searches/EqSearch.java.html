@@ -5,25 +5,53 @@ public class EqSearch {
     private int distance;
     private int minmag;
     
+    private double lat;
+    private double lon;
+    private String location;
+    
     //no-arg default constructor
-<span class="fc" id="L9">    public EqSearch() {}</span>
+<span class="fc" id="L13">    public EqSearch() {}</span>
 
     //Getters
     public int getDistance(){
-<span class="fc" id="L13">        return distance;</span>
+<span class="fc" id="L17">        return distance;</span>
     }
     
     public int getMinmag(){
-<span class="fc" id="L17">        return minmag;</span>
+<span class="fc" id="L21">        return minmag;</span>
+    }
+    
+    public double getLat(){
+<span class="fc" id="L25">        return lat;</span>
+    }
+    
+    public double getLon(){
+<span class="fc" id="L29">        return lon;</span>
+    }
+    
+    public String getLocation(){
+<span class="fc" id="L33">        return location;</span>
     }
     
     //Setters
     public void setDistance(int d){
-<span class="nc" id="L22">        distance = d;</span>
-<span class="nc" id="L23">    }</span>
+<span class="nc" id="L38">        distance = d;</span>
+<span class="nc" id="L39">    }</span>
     
     public void setMinmag(int m){
-<span class="nc" id="L26">        minmag = m;</span>
-<span class="nc" id="L27">    }</span>
+<span class="nc" id="L42">        minmag = m;</span>
+<span class="nc" id="L43">    }</span>
+    
+    public void setLat(double l){
+<span class="nc" id="L46">        lat = l;</span>
+<span class="nc" id="L47">    }</span>
+    
+    public void setLon(double l){
+<span class="nc" id="L50">        lon = l;</span>
+<span class="nc" id="L51">    }</span>
+    
+    public void setLocation(String loc){
+<span class="nc" id="L54">        location = loc;</span>
+<span class="nc" id="L55">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
