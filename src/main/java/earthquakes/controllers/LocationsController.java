@@ -67,8 +67,9 @@ public class LocationsController {
     
     
     @GetMapping("/locations")
-    public String index(Model model) {
-        Iterable<Location> locs= locationRepository.findAll();
+    public String index(Model model, OAuth2AuthenticationToken token) {
+        String uid = token.getPrincipal().getAttributes().get("id").toString();
+        Iterable<Location> locs= locationRepository.findByUid(uid);
         model.addAttribute("locations", locs);
         return "locations/index";
     }
